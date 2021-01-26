@@ -9,9 +9,10 @@
     }
 }
 
+
+//
 + (NSString*)handleDic:(NSDictionary*)data
 {
-
     NSMutableString *resultStr = [[NSMutableString alloc]initWithCapacity:0];
     //获取排好序的字典 blcok 返回key和Value
     [[self class] enumerateKeysAndObjectsUsingBlock:data block:^(id key, id obj) {
@@ -42,6 +43,7 @@
     return [resultStr substringToIndex:resultStr.length-1];
 }
 
+//使用
 NSDictionary *dic = @{
         @"code":@0,
         @"list":@[@{
